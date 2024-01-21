@@ -1,0 +1,90 @@
+:root {
+    --prime-color: lightslategray;
+    --prime-bg-color: #FFF;
+}
+
+body {
+    color: var(--prime-color, #4c5c6c);
+    background-color: var(--prime-bg-color, #1c2f9b);
+    text-decoration: none;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    display: grid;
+    margin: 0;
+    padding: 0;
+    grid-template-columns: 20% 1fr;
+    grid-template-rows: 10% 1fr 15%;
+    /* gap: 1em; */
+}
+
+header {
+    grid-area: 1/1/2/3;
+    background-color: #1F2937;
+}
+
+#asidegrid {
+    grid-area: 2/1/3/2;
+    background-color: #E5E7EB;
+    font-size: large;
+    color: #1F2937;
+}
+
+#maingrid {
+    grid-area: 2/2/3/3;
+    display: flex;
+    background-color: #1F2937;
+
+}
+
+#footergrid {
+    grid-area: 3/1/4/3;
+    text-align: center;
+    background-color: #1F2937;
+
+}
+
+
+#navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0 1em;
+    overflow: hidden;
+}
+
+#navbar ol {
+    display: inline-flex;
+    list-style: none;
+}
+
+#navbar ol li {
+    margin-inline-end: 0.5em;
+}
+
+#navbar a {
+    color: #fff;
+    padding: 0.14em 0.16em;
+    text-decoration: none;
+    font-size: large;
+    font-weight: 400;
+}
+
+#navbar li a:hover {
+    background-color: #111;
+}
+
+@media screen and (max-width : 600px) {
+    #navbar li {
+        float: none;
+    }
+
+}
+
+h1 {
+    text-shadow: -0.1em 0.1em black, 0 0 0.25em burlywood, 0 0 .05em darkblue;
+}
+
+p {
+    overflow: auto;
+}
