@@ -1,0 +1,127 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #0a1d56;
+  color: #f2f597;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  line-height: 1.4em;
+  /* background-image: url(../project-odin-recipes/PIC/brad-fickeisen-GAkUxAMBFpE-unsplash.jpg); */
+  /* background-position: center; */
+}
+
+.container {
+  margin: 0 15em;
+  padding: 1em 2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*Navbar ************************************************************************************************************************ */
+.navelement {
+  justify-content: flex-end;
+}
+
+.item {
+  padding-inline-end: 1em;
+  margin-inline-end: 1em;
+}
+
+.itemes-1 {
+  align-self: flex-start;
+  flex: 1;
+}
+
+.navelement > il > a {
+  text-decoration: none;
+  color: black;
+  font-size: larger;
+  font-weight: 700;
+}
+
+.navelement > il > a:hover,
+.navelement > il > a.Logo {
+  color: blanchedalmond;
+}
+
+/*Header ************************************************************************************************************************ */
+header > .container > h1 {
+  color: #37b5b6;
+}
+.statusbutton {
+  color: #37b5b6;
+  background-color: #0a1d56;
+  border: 0;
+}
+
+/*Main ************************************************************************************************************************ */
+main.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex: 1 0 1em;
+  padding: 0 2em;
+}
+
+.player {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 1em;
+}
+
+.player > img {
+  margin: 1em;
+  width: 10em;
+  height: 10em;
+}
+
+.playerOne > .RPS > .button {
+  background-color: #37b5b6;
+  margin: 0.3em;
+  padding: 0.25em 1em;
+  border: 0.1em slateblue;
+  border-radius: 0.3em;
+  font-size: large;
+  font-weight: 700;
+}
+
+/*Footer ************************************************************************************************************************ */
+@media screen and (max-width: 720px) {
+  .navbar > .container {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: 0.2fr 1fr;
+    gap: 0;
+
+    text-indent: -3em;
+    text-align: center;
+  }
+
+  .navbar > .container > .itemes-1 {
+    grid-area: 1/1/2/2;
+  }
+
+  .navbar > .container > .itemes-2 {
+    grid-area: 1/2/2/3;
+  }
+
+  .navbar > .container > .itemes-3 {
+    grid-area: 2/2/3/3;
+  }
+
+  .navbar > .container > .itemes-4 {
+    grid-area: 3/2/4/3;
+  }
+
+  main.container {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
